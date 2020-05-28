@@ -26,4 +26,8 @@ Code Injection is the general term for attack types which consist of injecting c
 **payload** - example4.php?name=hacker'.system('uname -a').'
 
 
-Ref : [LOL security] - ( https://www.youtube.com/channel/UCQm58nOLArHOfC5dF9zCxHg )
+Ref : 
+[LOL security](https://www.youtube.com/channel/UCQm58nOLArHOfC5dF9zCxHg)
+[OWASP](https://owasp.org/www-community/attacks/Code_Injection)
+[php.net](https://www.php.net)
+
