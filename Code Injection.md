@@ -1,7 +1,7 @@
 ## Code Injection
 Code Injection is the general term for attack types which consist of injecting code that is then interpreted/executed by the application. This type of attack exploits poor handling of untrusted data. These types of attacks are usually made possible due to a lack of proper input/output data validation
 
-### Web for Penterster
+### Web for Penterster walkthrough
 ### example 1
 ` eval() - evaluates a string as PHP code ` <br>
 **payload**- " .phpinfo(). "  <br>
@@ -26,7 +26,7 @@ Code Injection is the general term for attack types which consist of injecting c
 **payload** - example4.php?name=hacker'.system('uname -a').'
 
 
-Ref : 
+### Ref : 
 - [LOL security](https://www.youtube.com/channel/UCQm58nOLArHOfC5dF9zCxHg)
 - [OWASP](https://owasp.org/www-community/attacks/Code_Injection)
 - [php.net](https://www.php.net)
