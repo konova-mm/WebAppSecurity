@@ -1,4 +1,4 @@
-Code Injection 
+<h2>Code Injection</h2>
 Code Injection is the general term for attack types which consist of injecting code that is then interpreted/executed by the application. This type of attack exploits poor handling of untrusted data. These types of attacks are usually made possible due to a lack of proper input/output data validation
 
 Web for Penterster 
