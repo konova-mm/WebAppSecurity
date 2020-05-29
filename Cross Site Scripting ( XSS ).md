@@ -4,3 +4,5 @@
 
 ### Web For Pentester ( XSS ) Walkthrough
 ### Example 1
+``` There is no input validation, so, can exploit it directly with the classic “alert(1)” injection. ```
+### Payload - <script>alert(1)</script>
