@@ -87,3 +87,4 @@
 - [F4l13n5n0w](http://f4l13n5n0w.github.io/blog/2015/05/21/pentesterlab-web-for-pentester-xss/)
 - [OWASP](https://owasp.org/www-community/attacks/Code_Injection)
 - [php.net](https://www.php.net)
+- [pentesterlab](https://pentesterlab.com/exercises/xss_and_mysql_file/course)
