@@ -14,12 +14,12 @@
 
 ### Out-of-band SQLi -  an attacker is unable to use the same channel to launch the attack and gather results
 
-### [Useful Link](https://owasp.org/www-community/xss-filter-evasion-cheatsheet#HTML_entities)
+### [Useful Link](http://index-of.es/Varios-2/Advanced%20SQL%20Injection.pdf)
 
 
 ### Noted by [konova](https://www.facebook.com/kon0va)
 
 ### Ref : 
 - [acunetix](https://www.acunetix.com/websitesecurity/sql-injection2/)
-)
+
 
