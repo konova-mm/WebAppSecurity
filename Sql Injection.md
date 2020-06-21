@@ -4,11 +4,22 @@
 ## Types of SQL Injection (SQLi)
 ### In-band SQLi (Classic SQLi) - an attacker is able to use the same communication channel to both launch the attack and gather results.
 ``Error-based SQLi - relies on error messages thrown by the database server to obtain information about the structure of the database.``
+
 ``Union-based SQLi - leverages the UNION SQL operator to combine the results of two or more SELECT statements into a single result which is then returned as part of the HTTP response.``
 
 ### Inferential SQLi (Blind SQLi) - no data is actually transferred via the web application and the attacker would not be able to see the result of an attack in-band (which is why such attacks are commonly referred to as “blind SQL Injection attacks”)
 ``Blind-boolean-based SQLi - relies on sending an SQL query to the database which forces the application to return a different result depending on whether the query returns a TRUE or FALSE result.``
+
 ``Blind-time-based SQLi - relies on sending an SQL query to the database which forces the database to wait for a specified amount of time (in seconds) before responding ``
 
 ### Out-of-band SQLi -  an attacker is unable to use the same channel to launch the attack and gather results
+
+### [Useful Link](https://owasp.org/www-community/xss-filter-evasion-cheatsheet#HTML_entities)
+
+
+### Noted by [konova](https://www.facebook.com/kon0va)
+
+### Ref : 
+- [acunetix](https://www.acunetix.com/websitesecurity/sql-injection2/)
+)
 
